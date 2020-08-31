@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", // 기준 디렉토리
+    "sourceMap": true, // 소스맵(*.map) 파일 생성 여부
+    "target": "ESNext", // ECMA 버전 설정
+    "module": "ESNext", // 모듈을 위한 코드 설정
+    "moduleResolution": "node", // 모듈 해석방법
+    "lib": ["dom", "dom.iterable", "ESNext"], // 컴파일에 포함될 라이브러리
+    "allowJs": true, // js 파일 컴파일 허용 여부
+    "strict": false, // 엄격한 type-check 여부
+    "forceConsistentCasingInFileNames": true, // 같은파일에 대한 일관되지 않은 참조를 허용하지 않을지 여부
+    "esModuleInterop": true,
+    "isolatedModules": true, // 각 파일을 분리된 모듈로 트랜스파일
+    "noImplicitAny": false, // any 타입 금지 여부
+    "noImplicitThis": false, // this 타입을 명시적으로 지정 안할시 에러
+    "alwaysStrict": false, // 항상 strict mode로 분석할지 여부
+    "strictNullChecks": true, // null과 undefined 타입 구분 여부
+    "noImplicitReturns": true, // 함수의 모든 경로가 값을 반환하지 않으면 에러
+    "removeComments": true, // 주석 삭제
+    "preserveConstEnums": true, // const enum형 선언 삭제 여부
+    "allowSyntheticDefaultImports": true, // default export가 아닌 모듈에서도 default import가 가능하게 할지 여부, 타입확인에만 영향
+    "noUnusedLocals": true, // 사용 안된 지역변수에 대한 오류 여부
+    "noUnusedParameters": true, // 사용안된 파라미터에 대한 에러 여부
+    "jsx": "preserve" // jsx 코드 생성 설정
+  },
+  "exclude": ["node_modules"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}
